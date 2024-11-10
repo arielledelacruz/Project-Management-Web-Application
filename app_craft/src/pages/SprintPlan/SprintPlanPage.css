@@ -1,0 +1,31 @@
+.sprintPlanPage-container {
+    display: flex;
+    flex-direction: row; /* Arrange children in a row */
+    height: 100vh; /* Make the container take up the full viewport height */
+}
+
+.content {
+    flex: 1; /* Take up the remaining space */
+    padding: 20px; /* Add some padding for better spacing */
+    display: flex;
+    flex-direction: column;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #eeeeee; 
+    color: rgb(41, 41, 41);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center; /* Center align text */
+    max-width: 200px; /* Set a maximum width */
+}
+
+.task-board {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}

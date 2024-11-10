@@ -1,0 +1,347 @@
+.sprintBacklogPage-container {
+    display: flex;
+    height: 100vh;
+    background-color: #FAFAFA; 
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+.sprint-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+.sprint-name {
+    font-size: 24px;
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #eeeeee; 
+    color: rgb(41, 41, 41);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left; /* Align to the left */
+}
+
+.back-button:hover {
+    background-color: rgb(201, 201, 201);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.kanban-board {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.column {
+    background-color: #eeeeee;
+    border-radius: 15px;
+    padding: 0;
+    flex-grow: 1;
+    min-width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+    margin: 0;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Color-coded column headers */
+.column.not-started h2 {
+    background-color: #ffe240; /* Soft blue for Not Started */
+}
+
+.column.in-progress h2 {
+    background-color: #40c2ff; /* Soft orange for In Progress */
+}
+
+.column.completed h2 {
+    background-color: #25d366; /* Soft green for Completed */
+}
+
+/* Task styling */
+.task {
+    background-color: #fcfcfc;
+    color: rgb(74, 74, 74);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+/* Top border colors */
+.task.not-started {
+    border-top-color: #f6ef6b;
+}
+
+.task.in-progress {
+    border-top-color: #3cdfff;
+}
+
+.task.completed {
+    border-top-color: #94c260;
+}
+
+/* Task field bubbles */
+.task-name, .task-field {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #eeeeee;
+    color: black;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-tags-container {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.task-name {
+    font-weight: bold;
+}
+
+
+
+/* Adjust bubble colors based on priority */
+
+.task-field.priority-urgent {
+    background-color: #f17569; /* High priority - red */
+}
+
+.task-field.priority-important {
+    background-color: #f1ad65; /* High priority - orange */
+}
+
+.task-field.priority-medium {
+    background-color: #ffd864; /* Medium priority - yellow */
+}
+
+.task-field.priority-low {
+    background-color: #75de91; /* Low priority - green */
+}
+
+/* Adjust bubble colors based on tags */
+.task-field.tags-ui {
+    background-color: #A6F1C8; /* UI - light green */
+}
+
+.task-field.tags-frontend {
+    background-color: #fb7683; /* Backend - light orange */
+}
+
+.task-field.tags-backend {
+    background-color: #F4A566; /* Backend - light orange */
+}
+
+.task-field.tags-api {
+    background-color: #94a0ff; /* API - blue */
+}
+
+.task-field.tags-database {
+    background-color: #98f878; /* Database - green */
+}
+
+.task-field.tags-framework {
+    background-color: #ebb7fd; /* Framework - purple */
+}
+
+.task-field.tags-testing {
+    background-color: #fcc372; /* Testing - orange */
+}
+
+.task-field.tags-ui {
+    background-color: #A6F1C8; /* UI - light green */
+}
+
+.task-field.tags-ux {
+    background-color: #66BB77; /* UX - green */
+}
+
+
+.task:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); 
+    transition: all 0.4s ease-in-out;
+}
+
+/* Toggle Button */
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons {
+    display: inline-flex;
+    border: none;
+    font-family: Arial, sans-serif;
+}
+
+.toggle-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    outline: none;
+    border-radius: 0;
+}
+
+.toggle-buttons button.active {
+    background-color: #b3d1ff; 
+    color: black;
+    border-radius: 15px; 
+    border: 1px solid #000; 
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.toggle-buttons button:hover {
+    background-color: #e0e0e0;
+}
+
+/* First button styles (left button) */
+.toggle-buttons button:first-child {
+    border-radius: 15px 0 0 15px; /* Left-rounded corners */
+}
+
+/* Last button styles (right button) */
+.toggle-buttons button:last-child {
+    border-radius: 0 15px 15px 0; /* Right-rounded corners */
+}
+
+
+
+/* LIST VIEW */
+
+/* Task field consistency in List view */
+.list-view-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: rgb(41, 41, 41);
+    border-radius: 20px; 
+    overflow: hidden; 
+    border: 1px solid #adadad; 
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* Header styling */
+.list-view-table th {
+    background-color: #b9e4f6; 
+    font-weight: bold;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+    font-size: 16px;
+}
+
+.list-view-table tr {
+    background-color: #daf5fe; 
+}
+
+.list-view-table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Task field */
+.list-view-table td {
+    background-color: #fafafa;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.list-view-table .task-name {
+    font-weight: bold;
+}
+
+/* Colour-coded bubbles */
+.task-status, .task-priority, .task-tags {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+/* Status bubbles */
+.task-status.not-started { background-color: #f5ed5b; }
+.task-status.in-progress { background-color: #3cdfff;}
+.task-status.completed { background-color: #94c260; }
+
+/* Priority bubbles */
+.task-priority.low { background-color: #75de91; }
+.task-priority.medium { background-color: #ffd864; }
+.task-priority.high { background-color: #f1ad65; }
+.task-priority.urgent { background-color: #f17569; }
+
+/* Tags bubbles */
+.task-tags.ui { background-color: #A6F1C8; }
+.task-tags.backend { background-color: #F4A566; }
+.task-tags.api { background-color: #94a0ff; }
+.task-tags.database { background-color: #98f878; }
+.task-tags.framework { background-color: #ebb7fd; }
+.task-tags.testing { background-color: #fcc372; }
+.task-tags.frontend { background-color: #fb7683; }
+.task-tags.ux { background-color: #66BB77; }
+
+/* End Sprint Button */
+.end-sprint-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    background-color: rgb(198, 54, 54);
+    color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.end-sprint-button:hover {
+    background-color: darkred;
+    transition: background-color 0.3s ease;
+}

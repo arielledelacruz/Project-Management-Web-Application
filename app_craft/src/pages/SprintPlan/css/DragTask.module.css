@@ -1,0 +1,72 @@
+.drag-task {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: rgb(110, 178, 224); /* Light blue background */
+    cursor: pointer;
+    overflow: hidden; /* Ensure the border radius is applied */
+}
+
+.drag-task-details {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto; /* Allow the tag column to take more space */
+    align-items: center;
+    gap: 10px; /* Adjust spacing as needed */
+}
+
+.drag-task-title {
+    font-weight: bold;
+    text-align: left;
+}
+
+.drag-task-tags {
+    display: flex;
+    flex-wrap: wrap; /* Allow tags to wrap if needed */
+    gap: 5px; /* Space between tags */
+    max-width: 100%; /* Ensure tags don't overflow their container */
+}
+
+.drag-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: normal;
+    color: black;
+}
+
+.drag-tag.frontend { background-color: #FF5566; }  /* Frontend */
+.drag-tag.backend { background-color: #F4A566; }   /* Backend */
+.drag-tag.api { background-color: #6578FF; }       /* API */
+.drag-tag.database { background-color: #40FF00; }  /* Database */
+.drag-tag.framework { background-color: #D76BFF; } /* Framework */
+.drag-tag.testing { background-color: #FF9500; }   /* Testing */
+.drag-tag.ui { background-color: #A6F1C8; }        /* UI */
+.drag-tag.ux { background-color: #66BB77; }        /* UX */
+
+.drag-task-priority {
+    display: inline-block;  /* Ensure it's inline with text */
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: black;
+    max-width: fit-content;
+}
+
+.drag-task-priority.low { background-color: #00FF00; }       /* Low */
+.drag-task-priority.medium { background-color: #FFFF00; }    /* Medium */
+.drag-task-priority.important { background-color: #FFA500; } /* Important */
+.drag-task-priority.urgent { background-color: #FF0000; }    /* Urgent */
+
+.drag-task-story-points {
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #46627d;
+    color: white;
+}

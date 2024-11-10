@@ -1,0 +1,104 @@
+/* createSprint.css */
+.create-sprint-button {
+    background-color: #085c0b; /* Blue color for Create Sprint button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* You can also use a fixed width if you want it to be exactly the same size as a tag */
+    max-width: 120px;
+    margin-bottom: 10px; /* Add margin similar to the tag buttons */
+}
+
+.create-sprint-button:hover {
+    background-color: #0056b3;
+  }
+
+.create-sprint-overlay .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-sprint-overlay .overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* Adjust height as needed */
+}
+
+.create-sprint-overlay .overlay-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.create-sprint-overlay .form-group {
+    margin-bottom: 15px;
+}
+
+.create-sprint-overlay .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.create-sprint-overlay .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.create-sprint-overlay .button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+.create-sprint-overlay .button-group .cancel-button {
+    background-color: #B8D0FD; /* Original color for Cancel button */
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.create-sprint-overlay .button-group .cancel-button:hover {
+    background-color: #A0B8E0; /* Slightly darker shade for hover effect */
+}
+
+.create-sprint-overlay .button-group .create-button {
+    background-color: #4CAF50; /* Green color for Create Sprint button */
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.create-sprint-overlay .button-group .create-button:hover {
+    background-color: #45A049; /* Darker green for hover effect */
+}
+
+.create-sprint-overlay .error-message {
+    color: red;
+    margin-bottom: 15px;
+}

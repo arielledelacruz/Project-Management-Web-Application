@@ -1,0 +1,33 @@
+.task-board {
+    padding: px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.backlog, .sprint-tasks {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ededed;
+}
+
+.task {
+    padding: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.backlog h2, .sprint-tasks h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #343a40;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 0; /* Ensure the title is at the top */
+}

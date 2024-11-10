@@ -1,0 +1,180 @@
+.cancel-button {
+    background-color: #e0e0e0; /* Light gray background color */
+    color: #333; /* Text color */
+    padding: 8px 16px; /* Padding around the text */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth transition for hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.cancel-button:hover {
+    background-color: #d6d6d6; /* Slightly darker gray on hover */
+    transform: translateY(-2px); /* Slightly lifts button on hover */
+}
+
+
+.create-button {
+    background-color: #aecbfa; /* Light blue background color */
+    color: #333; /* Text color */
+    padding: 8px 16px; /* Padding around the text */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth transition for hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+}
+
+.create-button:hover {
+    background-color: #90caf9; /* Slightly darker blue on hover */
+    transform: translateY(-2px); /* Slightly lifts button on hover */
+}
+
+.overlay {
+    position: fixed; /* Cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    display: flex;
+    align-items: flex-start; /* Aligns overlay content at the start (top) */
+    justify-content: center; /* Center horizontally */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    padding-top: 30px; /* Add padding to top for centering */
+}
+
+.overlay-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensure the overlay-content is relatively positioned */
+}
+
+
+
+.cross-button {
+    position: absolute; /* Keep it positioned absolutely within the overlay */
+    top: 15px; /* Adjust to align perfectly with the overlay */
+    right: 15px; /* Adjust to align perfectly with the overlay */
+    font-size: 20px; /* Size of the 'x' */
+    background-color: #f5f5f5; /* Light gray background color */
+    color: #333; /* Text color */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 50%; /* Rounded shape */
+    width: 32px; /* Set a fixed width */
+    height: 32px; /* Set a fixed height */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Center the 'x' */
+    align-items: center; /* Center the 'x' */
+    justify-content: center; /* Center the 'x' */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.cross-button:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+    transform: scale(1.1); /* Scale up slightly on hover */
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.task-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.task-input,
+.task-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.task-textarea {
+    min-height: 80px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.overlay-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Apply custom styles for the tag checkboxes in the form */
+.tag-checkbox-wrapper {
+    display: inline-block;
+    margin-right: 10px;  /* Adjust spacing between tags */
+}
+
+.tag-checkbox {
+    position: relative;
+    cursor: pointer;
+    opacity: 1;  /* Show the default checkbox */
+}
+
+.tag-label {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: black;  /* Default text color */
+}
+
+/* Custom colors for each tag */
+.tag-checkbox.frontend + .tag-label { background-color: #FF5566; }  /* Frontend */
+.tag-checkbox.backend + .tag-label { background-color: #F4A566; }   /* Backend */
+.tag-checkbox.api + .tag-label { background-color: #6578FF; }       /* API */
+.tag-checkbox.database + .tag-label { background-color: #40FF00; }  /* Database */
+.tag-checkbox.framework + .tag-label { background-color: #D76BFF; } /* Framework */
+.tag-checkbox.testing + .tag-label { background-color: #FF9500; }   /* Testing */
+.tag-checkbox.ui + .tag-label { background-color: #A6F1C8; }        /* UI */
+.tag-checkbox.ux + .tag-label { background-color: #66BB77; }        /* UX */
+
+/* Priority selection boxes */
+.priority-checkbox-wrapper {
+    display: inline-block;
+    margin-right: 10px;  /* Adjust spacing between priority boxes */
+}
+
+.priority-checkbox {
+    position: relative;
+    cursor: pointer;
+    opacity: 1;  /* Show the default checkbox */
+}
+
+.priority-label {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: black;  /* Default text color */
+}
+
+/* Custom colors for each priority */
+.priority-checkbox.low + .priority-label { background-color: #00FF00; }       /* Low */
+.priority-checkbox.medium + .priority-label { background-color: #FFFF00; }    /* Medium */
+.priority-checkbox.important + .priority-label { background-color: #FFA500; } /* Important */
+.priority-checkbox.urgent + .priority-label { background-color: #FF0000; }    /* Urgent */
+
+/* Checkbox checked indicator */
+.priority-checkbox:checked + .priority-label {
+    border: 2px solid black;  /* Add border to indicate selection */
+}
+

@@ -1,0 +1,47 @@
+.time-range-filter {
+    display: flex;
+    flex-direction: row; /* Change from column to row layout */
+    align-items: center; /* Align items vertically centered */
+    justify-content: flex-end; /* Align items horizontally to the left */
+    margin-bottom: 10px; /* Spacing from the table */
+}
+
+.time-range-filter label {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.time-range-filter input {
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 150px; /* Add this line to change the width */
+}
+
+.time-range-filter button {
+    padding: 5px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.time-range-filter button:hover {
+    background-color: #45a049;
+}
+
+
+/* Error message styling */
+.error-message-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 805px; /* Add this to move the error message to the right */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}

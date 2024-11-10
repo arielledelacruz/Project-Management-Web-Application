@@ -1,0 +1,42 @@
+.graph-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.graph-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    border: black;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 10px 10px;
+    width: auto;
+}
+
+.graph-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,83 @@
+/* Ensure the parent container has position: relative */
+.sort-container {
+    position: relative; /* Relative positioning for the dropdown */
+    display: inline-block; /* Ensure it fits inline */
+  }
+  
+  /* Sort button styling */
+  .sort-button {
+    padding: 8px 16px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 14px;
+    margin-left: 380px;
+  }
+  
+  .sort-button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dropdown box styling */
+  .sort-dropdown {
+    position: absolute; /* Position relative to the .sort-container */
+    top: 40px; /* Adjust the top position as needed */
+    left: 380px; /* Adjust left/right position as needed */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 8px;
+    width: 150px;
+  }
+  
+  /* Buttons inside the dropdown */
+  .sort-dropdown button {
+    padding: 8px 12px;
+    margin: 4px 0;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.2s;
+  }
+  
+  .sort-dropdown button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  
+  .nested-dropdown {
+    margin-top: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Adjust positioning for nested dropdown */
+    left: 100%; /* Position it to the right of the parent dropdown */
+    top: 0; /* Align it with the top of the parent button */
+    padding: 8px;
+    width: 150px;
+  }
+  
+  .nested-dropdown button {
+    padding: 8px 12px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.2s;
+  }
+  
+  .nested-dropdown button:hover {
+    background-color: #e0e0e0;
+  }
+  

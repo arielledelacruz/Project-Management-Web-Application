@@ -1,0 +1,71 @@
+.header {
+    background-color: #00008B; /* Dark blue color */
+    width: 85px; /* Narrow width */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the items vertically */
+    align-items: center; /* Center the items horizontally */
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative; /* To make sure the light blue bar can be absolutely positioned */
+}
+
+/* Light blue vertical bar */
+.lightblue-bar {
+    background-color: #86B2FF; /* Light blue color */
+    width: 10px; /* Adjust the width as needed */
+    height: 100vh; /* Full height */
+    position: absolute;
+    top: 0;
+    right: 0; /* Position it to the right of the dark blue bar */
+}
+
+/* Style for the navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between the items */
+    width: 100%;
+}
+
+/* Style for each navigation item */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px; /* Font size for the labels */
+    font-weight: 500;
+    width: 85px; /* Same as the .header width */
+    box-sizing: border-box;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s;
+    
+}
+
+/* Style for the icon inside the navigation item */
+.nav-item .nav-icon {
+    width: 24px; /* Set the width of the image */
+    height: 24px; /* Set the height of the image */
+    margin-bottom: 5px; /* Space between the image and text */
+}
+
+/* Active navigation item with a light blue background */
+.nav-item.active {
+    background-color: #86B2FF; /* Light blue background for active item */
+    border-radius: 15px; /* Rounded corners */
+    padding: 15px 0; /* Padding for active state */
+}
+
+/* Hover effect for navigation items */
+.nav-item:hover {
+    background-color: #3333FF; /* Hover effect */
+    border-radius: 15px;
+}

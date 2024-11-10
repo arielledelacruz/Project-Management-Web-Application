@@ -1,0 +1,106 @@
+/* editSprint.css */
+/* Edit Button */
+.edit-sprint-button {
+    background-color: #FF9800; /* Orange color for Edit Sprint button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.edit-sprint-button:hover {
+    background-color: #e67e00; /* Darker orange for hover effect */
+}
+
+/* Overlay Styling */
+.edit-sprint-overlay .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-sprint-overlay .overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.edit-sprint-overlay .overlay-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styles */
+.edit-sprint-overlay .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-sprint-overlay .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edit-sprint-overlay .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Button Group */
+.edit-sprint-overlay .button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+/* Cancel Button */
+.edit-sprint-overlay .button-group .cancel-button {
+    background-color: #B8D0FD; 
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.edit-sprint-overlay .button-group .cancel-button:hover {
+    background-color: #A0B8E0; /* Slightly darker shade for hover effect */
+}
+
+/* Save Button */
+.edit-sprint-overlay .button-group .edit-button {
+    background-color: #FF9800; 
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px; /* Same rounded corners */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease;
+}
+
+.edit-sprint-overlay .button-group .edit-button:hover {
+    background-color: #e67e00; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

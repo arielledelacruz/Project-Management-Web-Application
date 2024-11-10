@@ -1,0 +1,143 @@
+.TableContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 80%;
+  overflow: auto;
+}
+
+.TableContainer th, .TableContainer td {
+  padding: 10px;
+  text-align: left; /* Ensure all table headers and cells are left-aligned */
+  background-color: #f4f4f4;
+}
+
+.TableContainer th {
+  background-color: #86b2ff80; /* Background color for the sticky header */
+  position: sticky;
+  top: 0; /* Keep it at the top of the scrollable area */
+  z-index: 10; /* Ensure it stays above the table body content */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4); /* Optional: shadow for visual effect */
+}
+.TableContainer tbody tr {
+  background-color: #f4f4f4; /* Blue color */
+}
+
+/* Keep the same container layout */
+.task-details-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto; /* Allow the tag column to take more space */
+  align-items: center;
+  gap: 10px; /* Adjust spacing as needed */
+}
+
+/* New task-tags class to handle tag display */
+.task-tags {
+  display: flex;
+  flex-wrap: wrap; /* Allow tags to wrap if needed */
+  gap: 5px; /* Space between tags */
+  max-width: 100%; /* Ensure tags don't overflow their container */
+}
+
+/* Tag display styles */
+.tag-display {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 90px;
+  font-weight: normal;
+  color: white; 
+}
+
+/* Custom colors for each tag */
+.tag-display.frontend { background-color: #f444449d; }  /* Frontend */
+.tag-display.backend { background-color: #ea6e3d9d; }   /* Backend */
+.tag-display.api { background-color: #dfbe3a9d; }       /* API */
+.tag-display.database { background-color: #8fdc2b9d; }  /* Database */
+.tag-display.framework { background-color: #35b7769d; } /* Framework */
+.tag-display.testing { background-color: #3b97c99d; }   /* Testing */
+.tag-display.ui { background-color: #414ccb9d; }        /* UI */
+.tag-display.ux { background-color: #783ab69d; }        /* UX */
+
+/* Priority display styles */
+.priority-display {
+  display: inline-block;  /* Ensure it's inline with text */
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  max-width: fit-content;
+}
+
+/* Custom colors for each priority */
+.priority-display.low { background-color: #085c0b; }       /* Low */
+.priority-display.medium { background-color: #ffd103; }    /* Medium */
+.priority-display.important { background-color: #ff9100; } /* Important */
+.priority-display.urgent { background-color: #ce0000; }    /* Urgent */
+
+
+
+.task-detail {
+  text-align: left;
+}
+
+.TableContainer .task-name {
+  font-weight: bold;
+}
+
+
+
+.delete-button {
+  justify-self: end; /* Align the delete button to the far right */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  color: inherit; /* Inherit text color */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.delete-button:hover {
+  color: red; /* Change text color to red on hover */
+}
+
+
+.custom-row {
+  background-color: #f4f4f4; /* Light blue background */
+  border-radius: 30px; /* Curved edges */
+  overflow: hidden; /* Ensure the border radius is applied */
+}
+
+.custom-row > * {
+  border-bottom: none; /* Remove bottom border */
+}
+
+.filter-sort-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.sort-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.sort-buttons button {
+  padding: 8px 16px;
+  background-color: #00008B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sort-buttons button:hover {
+  background-color: #133f96;
+}
+
+/*ONLY COMMENTED FOR NOW
+/* .TableContainer {
+  /border-top-left-radius: 25px; /* Curved top-left corner */
+ /* border-top-right-radius: 25px; /* Curved top-right corner */
+/*} */

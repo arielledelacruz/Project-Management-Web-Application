@@ -1,0 +1,143 @@
+/* things to note in this file
+
+the tag filter button css is shared unlike the dropdown button and dropdown item is not shared
+any changes needed to made the tag filter and it's item to be different. You need to make changes
+for all the tag filter button and it's item.
+
+
+/* Flex container to align buttons horizontally */
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between buttons */
+}
+
+/* Buttons and dropdowns in the same row */
+.filter-button, .dropdown-button, .Storypoint-button {
+  background-color: #00008B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.filter-button:hover, .dropdown-button:hover, .Storypoint-button:hover {
+  background-color: #133f96;
+}
+
+/* Ensure dropdowns do not affect layout */
+.dropdown-container {
+  position: relative;
+  display: flex;
+}
+
+/* Dropdown menu for priority and story points */
+.priority-dropdown-menu, .story-points-dropdown-menu, .tag-box {
+  position: absolute;
+  top: 100%; /* Position the menu right below the button */
+  z-index: 1000;
+  background-color: white;
+  border: 2px solid #FAFAFA;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), /* Darker shadow */
+              0px 6px 20px rgba(0, 0, 0, 0.19); /* Additional layer for depth */
+  display: flex;
+  padding: 10px;
+  flex-wrap: nowrap;
+}
+
+/* Each item in the dropdown */
+.priority-dropdown-item, .story-points-dropdown-item{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.priority-dropdown-item:hover, .story-points-dropdown-item:hover {
+  /* background-color: #f0f0f0; */
+  filter: brightness(0.7); /* Darkens the color by 10% */
+
+}
+
+/* Custom colors for each tag */
+.filter-button.frontend { color:black; background-color: #f444449d; }  /* Frontend */
+.filter-button.backend { color:black; background-color: #ea6e3d9d; }   /* Backend */
+.filter-button.api { color:black; background-color: #dfbe3a9d; }       /* API */
+.filter-button.database { color:black; background-color: #8fdc2b9d; }  /* Database */
+.filter-button.framework { color:black; background-color: #35b7769d; } /* Framework */
+.filter-button.testing { color:black; background-color: #3b97c99d; }   /* Testing */
+.filter-button.ui { color:black; background-color: #414ccb9d; }        /* UI */
+.filter-button.ux { color:black; background-color: #783ab69d; }        /* UX */
+
+/* Darken the background color on hover */
+.filter-button.frontend:hover, .filter-button.frontend.active { filter: brightness(0.6); }
+.filter-button.backend:hover, .filter-button.backend.active { filter: brightness(0.6); }
+.filter-button.api:hover, .filter-button.api.active { filter: brightness(0.6); }
+.filter-button.database:hover, .filter-button.database.active { filter: brightness(0.6); }
+.filter-button.framework:hover, .filter-button.framework.active { filter: brightness(0.6); }
+.filter-button.testing:hover, .filter-button.testing.active { filter: brightness(0.6); }
+.filter-button.ui:hover, .filter-button.ui.active { filter: brightness(0.6); }
+.filter-button.ux:hover, .filter-button.ux.active { filter: brightness(0.6); }
+
+/* Custom colors for each priority */
+/* Priority specific styles */
+.priority-dropdown-item.low { background-color: #085c0b; /* Green for Low */ }
+
+.priority-dropdown-item.medium { background-color: #FFFF00; /* Yellow for Medium */}
+
+.priority-dropdown-item.important { background-color: #FFA500; /* Orange for Important */}
+
+.priority-dropdown-item.urgent { background-color: #FF0000; /* Red for Urgent */ }
+
+/* Priority Colors */
+.low { background-color: #085c0b !important; /* Green for Low */ }
+
+.medium { background-color: #ffd103 !important; /* Yellow for Medium */ }
+
+.important { background-color: #ff9100 !important; /* Orange for Important */ }
+
+.urgent { background-color: #ce0000 !important; /* Red for Urgent */ }
+
+
+/* this whole section is for story points */
+/* .storypoint-1 { background-color: #00FF00 !important; }
+
+.storypoint-2 { background-color: #38FF00 !important; }
+
+.storypoint-3 { background-color: #AAFF00 !important; }
+
+.storypoint-4 { background-color: #AAFF00 !important; }
+
+.storypoint-5 { background-color: #E2FF00 !important; }
+
+.storypoint-6 { background-color: #FFE300 !important; }
+
+.storypoint-7 { background-color: #FFAB00 !important; }
+
+.storypoint-8 { background-color: #FF7200 !important; }
+
+.storypoint-9 { background-color: #FF3900 !important; }
+
+.storypoint-10 { background-color: #FF0000 !important; } */
+
+/* Clear Button */
+.clear-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00008B;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.clear-button:hover {
+  background-color: #ff4f4f;
+}

@@ -1,0 +1,35 @@
+.task-list {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0; /* Light background color */
+    border-radius: 8px;
+  }
+  
+  .task-item {
+    background-color: #e0f7fa; /* Light blue background for task items */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-name {
+    font-weight: bold;
+  }
+  
+  .task-details {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task-tag,
+  .task-priority,
+  .task-story-points {
+    background-color: #d0e0f0; /* Background for tags, priority, etc. */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  

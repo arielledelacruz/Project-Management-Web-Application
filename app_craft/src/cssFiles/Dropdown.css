@@ -1,0 +1,23 @@
+/* Dropdown.css */
+.dropdown {
+    margin-bottom: 15px;
+}
+
+.dropdown-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dropdown-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
